@@ -1,0 +1,97 @@
+digraph qing{
+	rankdir = LR;
+graph [bgcolor = transparent]
+	node [shape = "ellipse", style = "filled", color = "lightblue", fontname = "FangSong", fontsize = "12"];
+	edge [style = "bold", color = "black", fontname = "Microsoft Yahei", fontsize = "12", penwidth = "2"];
+	start [shape = "none", image = "C:/719/2017_06_10_Total/image/workflowModelImage/start.png", labelloc = b];
+	7[label = 下发姿态调整命令];
+	start -> 7;
+	node [shape = "box", style = "filled", color = "forestgreen", fontname = "FangSong", fontsize = "12"];
+	edge [style = "dashed", color = "forestgreen", fontname = "FangSong", fontsize = "12", penwidth = "1"];
+	and_device_7[label = "and", shape = "none", image = "C:/719/2017_06_10_Total/image/workflowModelImage/and.png"];
+	and_device_7->7;
+	Dev_9 -> and_device_7;
+
+	node [shape = "ellipse", style = "filled", color = "lightblue", fontname = "FangSong", fontsize = "12"];
+	edge [style = "bold", color = "black", fontname = "Microsoft Yahei", fontsize = "12", penwidth = "2"];
+	and_task_8[label = "and", shape = "none", image = "C:/719/2017_06_10_Total/image/workflowModelImage/and.png"];
+	and_task_8->8;
+	7[label = 下发姿态调整命令];
+	8[label = 姿态命令处理];
+	7 -> and_task_8;
+	node [shape = "box", style = "filled", color = "forestgreen", fontname = "FangSong", fontsize = "12"];
+	edge [style = "dashed", color = "forestgreen", fontname = "FangSong", fontsize = "12", penwidth = "1"];
+	and_device_8[label = "and", shape = "none", image = "C:/719/2017_06_10_Total/image/workflowModelImage/and.png"];
+	and_device_8->8;
+	Dev_10 -> and_device_8;
+
+	node [shape = "ellipse", style = "filled", color = "lightblue", fontname = "FangSong", fontsize = "12"];
+	edge [style = "bold", color = "black", fontname = "Microsoft Yahei", fontsize = "12", penwidth = "2"];
+	and_task_9[label = "and", shape = "none", image = "C:/719/2017_06_10_Total/image/workflowModelImage/and.png"];
+	and_task_9->9;
+	8[label = 姿态命令处理];
+	9[label = 控制器操作信息];
+	8 -> and_task_9;
+	node [shape = "box", style = "filled", color = "forestgreen", fontname = "FangSong", fontsize = "12"];
+	edge [style = "dashed", color = "forestgreen", fontname = "FangSong", fontsize = "12", penwidth = "1"];
+	and_device_9[label = "and", shape = "none", image = "C:/719/2017_06_10_Total/image/workflowModelImage/and.png"];
+	and_device_9->9;
+	Dev_11 -> and_device_9;
+
+	node [shape = "ellipse", style = "filled", color = "lightblue", fontname = "FangSong", fontsize = "12"];
+	edge [style = "bold", color = "black", fontname = "Microsoft Yahei", fontsize = "12", penwidth = "2"];
+	and_task_10[label = "and", shape = "none", image = "C:/719/2017_06_10_Total/image/workflowModelImage/and.png"];
+	and_task_10->10;
+	9[label = 控制器操作信息];
+	10[label = 采集航速和潜深信息];
+	9 -> and_task_10;
+	11[label = 获取潜深信息];
+	10[label = 采集航速和潜深信息];
+	11 -> and_task_10;
+	12[label = 获取航速信息];
+	10[label = 采集航速和潜深信息];
+	12 -> and_task_10;
+	node [shape = "box", style = "filled", color = "forestgreen", fontname = "FangSong", fontsize = "12"];
+	edge [style = "dashed", color = "forestgreen", fontname = "FangSong", fontsize = "12", penwidth = "1"];
+	and_device_10[label = "and", shape = "none", image = "C:/719/2017_06_10_Total/image/workflowModelImage/and.png"];
+	and_device_10->10;
+	Dev_12 -> and_device_10;
+
+	node [shape = "ellipse", style = "filled", color = "lightblue", fontname = "FangSong", fontsize = "12"];
+	edge [style = "bold", color = "black", fontname = "Microsoft Yahei", fontsize = "12", penwidth = "2"];
+	start [shape = "none", image = "C:/719/2017_06_10_Total/image/workflowModelImage/start.png", labelloc = b];
+	11[label = 获取潜深信息];
+	start -> 11;
+	node [shape = "box", style = "filled", color = "forestgreen", fontname = "FangSong", fontsize = "12"];
+	edge [style = "dashed", color = "forestgreen", fontname = "FangSong", fontsize = "12", penwidth = "1"];
+	and_device_11[label = "and", shape = "none", image = "C:/719/2017_06_10_Total/image/workflowModelImage/and.png"];
+	and_device_11->11;
+	Dev_14 -> and_device_11;
+
+	node [shape = "ellipse", style = "filled", color = "lightblue", fontname = "FangSong", fontsize = "12"];
+	edge [style = "bold", color = "black", fontname = "Microsoft Yahei", fontsize = "12", penwidth = "2"];
+	start [shape = "none", image = "C:/719/2017_06_10_Total/image/workflowModelImage/start.png", labelloc = b];
+	12[label = 获取航速信息];
+	start -> 12;
+	node [shape = "box", style = "filled", color = "forestgreen", fontname = "FangSong", fontsize = "12"];
+	edge [style = "dashed", color = "forestgreen", fontname = "FangSong", fontsize = "12", penwidth = "1"];
+	or_device_12[label = "or", shape = "none", image = "C:/719/2017_06_10_Total/image/workflowModelImage/or.png"];
+	or_device_12->12;
+	Dev_14 -> or_device_12;
+	Dev_15 -> or_device_12;
+	Dev_16 -> or_device_12;
+
+	node [shape = "ellipse", style = "filled", color = "lightblue", fontname = "FangSong", fontsize = "12"];
+	edge [style = "bold", color = "black", fontname = "Microsoft Yahei", fontsize = "12", penwidth = "2"];
+	and_task_13[label = "and", shape = "none", image = "C:/719/2017_06_10_Total/image/workflowModelImage/and.png"];
+	and_task_13->13;
+	10[label = 采集航速和潜深信息];
+	13[label = 姿态调整控制器动作];
+	10 -> and_task_13;
+	node [shape = "box", style = "filled", color = "forestgreen", fontname = "FangSong", fontsize = "12"];
+	edge [style = "dashed", color = "forestgreen", fontname = "FangSong", fontsize = "12", penwidth = "1"];
+	and_device_13[label = "and", shape = "none", image = "C:/719/2017_06_10_Total/image/workflowModelImage/and.png"];
+	and_device_13->13;
+	Dev_13 -> and_device_13;
+
+}

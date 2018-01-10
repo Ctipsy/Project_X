@@ -1,0 +1,6 @@
+graph qing{
+	rankdir = LR;
+graph [bgcolor = transparent,autosize=false, size="8.0, 10"]
+	node [shape = "ellipse", style = "filled", color = "#2E8B57", fontname = "FangSong", fontsize = "12"];
+	1[label = "1\n"];
+}

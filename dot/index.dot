@@ -1,0 +1,36 @@
+digraph index{
+graph [bgcolor = transparent,autosize=false, size="8.0, 10"]
+	node [shape = "box", style = "", color = "", fontname = "FangSong", fontsize = "12"];
+	保障性->关键设备配置UPS[label = "0.6", color = black, penwidth = 1, fontname = "FangSong"];
+	服务器设备指标体系->环境适应性[label = "0.1", color = black, penwidth = 1, fontname = "FangSong"];
+	环境适应性->温或湿度适应性[label = "0.4", color = black, penwidth = 1, fontname = "FangSong"];
+	可维护性->板卡芯片通用性[label = "0.2", color = black, penwidth = 1, fontname = "FangSong"];
+	可靠性->平均无故障时间[label = "0.6", color = black, penwidth = 1, fontname = "FangSong"];
+	安全性->存储设备或单元访问控制[label = "0.2", color = black, penwidth = 1, fontname = "FangSong"];
+	可扩展性->软件插件化开发与功能扩展[label = "0.2", color = black, penwidth = 1, fontname = "FangSong"];
+	完整性->开发流程完整性[label = "0.3", color = black, penwidth = 1, fontname = "FangSong"];
+	服务器设备指标体系->易用性[label = "0.1", color = black, penwidth = 1, fontname = "FangSong"];
+	易用性->硬件易用性[label = "0.5", color = black, penwidth = 1, fontname = "FangSong"];
+	完整性->软件测试完整性[label = "0.5", color = black, penwidth = 1, fontname = "FangSong"];
+	服务器设备指标体系->完整性[label = "0.1", color = black, penwidth = 1, fontname = "FangSong"];
+	可维护性->预留关键测试节点[label = "0.1", color = black, penwidth = 1, fontname = "FangSong"];
+	服务器设备指标体系->保障性[label = "0.2", color = black, penwidth = 1, fontname = "FangSong"];
+	可扩展性->通信协议配置[label = "0.1", color = black, penwidth = 1, fontname = "FangSong"];
+	安全性->接口或无线开关关闭[label = "0.1", color = black, penwidth = 1, fontname = "FangSong"];
+	服务器设备指标体系->安全性[label = "0.1", color = black, penwidth = 1, fontname = "FangSong"];
+	可扩展性->操作系统支持的硬件扩展性[label = "0.3", color = black, penwidth = 1, fontname = "FangSong"];
+	完整性->技术文档完整性[label = "0.2", color = black, penwidth = 1, fontname = "FangSong"];
+	服务器设备指标体系->可维护性[label = "0.1", color = black, penwidth = 1, fontname = "FangSong"];
+	易用性->软件易用性[label = "0.5", color = black, penwidth = 1, fontname = "FangSong"];
+	可扩展性->板卡硬件资源扩展能力[label = "0.3", color = black, penwidth = 1, fontname = "FangSong"];
+	可维护性->系统崩溃记录与恢复[label = "0.3", color = black, penwidth = 1, fontname = "FangSong"];
+	服务器设备指标体系->可扩展性[label = "0.1", color = black, penwidth = 1, fontname = "FangSong"];
+	保障性->关键部位标识与警示[label = "0.4", color = black, penwidth = 1, fontname = "FangSong"];
+	环境适应性->电磁环境适应性[label = "0.6", color = black, penwidth = 1, fontname = "FangSong"];
+	安全性->重要设备接口访问限制[label = "0.2", color = black, penwidth = 1, fontname = "FangSong"];
+	服务器设备指标体系->可靠性[label = "0.2", color = black, penwidth = 1, fontname = "FangSong"];
+	可维护性->设备模块化设计[label = "0.4", color = black, penwidth = 1, fontname = "FangSong"];
+	可靠性->平均修复时间[label = "0.4", color = black, penwidth = 1, fontname = "FangSong"];
+	安全性->系统访问控制与身份识别[label = "0.5", color = black, penwidth = 1, fontname = "FangSong"];
+	可扩展性->接口类型和数量[label = "0.1", color = black, penwidth = 1, fontname = "FangSong"];
+}

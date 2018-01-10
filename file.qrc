@@ -1,0 +1,53 @@
+<RCC>
+    <qresource prefix="/png">
+        <file>rc/1taishi.ico</file>
+        <file>rc/assessment_trial.xml</file>
+        <file>rc/bianjieSecurity.png</file>
+        <file>rc/kuozhan.jpg</file>
+        <file>rc/main16.ico</file>
+        <file>rc/main32.ico</file>
+        <file>rc/main48.ico</file>
+        <file>rc/main64.ico</file>
+        <file>rc/mainwindow.png</file>
+        <file>rc/message.png</file>
+        <file>rc/net.png</file>
+        <file>rc/projec_info.ico</file>
+        <file>rc/quyu.png</file>
+        <file>rc/start.ico</file>
+        <file>rc/start.png</file>
+        <file>rc/taishi.png</file>
+        <file>rc/workflow.png</file>
+        <file>rc/wuli.png</file>
+        <file>rc/zaibei.png</file>
+        <file>rc/internetIndex.bmp</file>
+        <file>rc/link.png</file>
+        <file>rc/help.png</file>
+        <file>rc/button/1 (1).png</file>
+        <file>rc/button/1 (2).png</file>
+        <file>rc/button/1 (3).png</file>
+        <file>rc/button/1 (4).png</file>
+        <file>rc/button/1 (5).png</file>
+        <file>rc/button/1 (6).png</file>
+        <file>rc/button/1 (7).png</file>
+        <file>rc/button/1 (8).png</file>
+        <file>rc/button/1 (9).png</file>
+        <file>rc/button/1 (10).png</file>
+        <file>rc/button/1 (11).png</file>
+        <file>rc/button/1 (12).png</file>
+        <file>rc/button/1 (13).png</file>
+        <file>rc/button/1 (14).png</file>
+        <file>rc/button/1 (15).png</file>
+        <file>rc/button/1 (16).png</file>
+        <file>rc/button/1 (17).png</file>
+        <file>rc/button/1 (18).png</file>
+        <file>rc/button/1 (19).png</file>
+        <file>rc/button/1 (20).png</file>
+        <file>rc/button/1 (21).png</file>
+        <file>rc/button/1 (22).png</file>
+        <file>rc/button/1 (23).png</file>
+        <file>rc/button/1 (24).png</file>
+        <file>rc/button/1 (25).png</file>
+        <file>rc/quyu1.png</file>
+        <file>../../Program Files (x86)/X_Ship/rc/quyu1.png</file>
+    </qresource>
+</RCC>

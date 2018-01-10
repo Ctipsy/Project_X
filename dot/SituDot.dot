@@ -1,0 +1,21 @@
+digraph qing{
+rankdir = LR
+graph [bgcolor = transparent,autosize=false, size="8.0, 10"]
+	node [shape = "none", style = "", color = "", fontname = "FangSong", fontsize = "12"];
+显控台B[shape = "none",color="",style="",image = "C:/719/2017_06_10_Total/image/pic/XIANKONGTAI.png",labelloc = b ,height=1.2];
+服务器B[shape = "none",color="",style="",image = "C:/719/2017_06_10_Total/image/pic/FUWUQI.png",labelloc = b ,height=1.2];
+控制器B[shape = "none",color="",style="",image = "C:/719/2017_06_10_Total/image/pic/KONGZHIQI.png",labelloc = b ,height=1.2];
+数据采集箱B[shape = "none",color="",style="",image = "C:/719/2017_06_10_Total/image/pic/SHUJUCAIJIXIANG.png",labelloc = b ,height=1.2];
+姿态控制器B[shape = "none",color="",style="",image = "C:/719/2017_06_10_Total/image/pic/ZITAIKONGZHIQI.png",labelloc = b ,height=1.2];
+声呐B[shape = "none",color="",style="",image = "C:/719/2017_06_10_Total/image/pic/SHENGNA.png",labelloc = b ,height=1.2];
+多普勒传感器A[shape = "none",color="",style="",image = "C:/719/2017_06_10_Total/image/pic/DUOPULECHUANGANQI.png",labelloc = b ,height=1.2];
+陀螺仪A[shape = "none",color="",style="",image = "C:/719/2017_06_10_Total/image/pic/TUOLUOYI.png",labelloc = b ,height=1.2];
+显控台B->服务器B[ color = green ] 
+服务器B->控制器B[ color = green ] 
+控制器B->数据采集箱B[ color = green ] 
+声呐B->数据采集箱B[ color = green ] 
+声呐B->数据采集箱B[ color = green ] 
+多普勒传感器A->数据采集箱B[ color = green ] 
+陀螺仪A->数据采集箱B[ color = green ] 
+数据采集箱B->姿态控制器B[ color = green ] 
+}

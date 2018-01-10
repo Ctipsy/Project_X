@@ -1,0 +1,16 @@
+digraph qing{
+rankdir = LR
+graph [bgcolor = transparent]
+node [shape = "ellipse", fontname = "FangSong", fontsize = "12"];
+
+温度传感器[shape = "ellipse",color=red,style="filled", image = "C:/719/2017_06_10_Total/image/pic/3.png", labelloc = b , height=1.2];
+
+湿度传感器[shape = "none", image = "C:/719/2017_06_10_Total/image/pic/3.png", labelloc = b , height=1.2];
+
+数据采集箱1[shape = "none", image = "C:/719/2017_06_10_Total/image/pic/2.png", labelloc = b , height=1.2];
+
+显示台[shape = "none", image = "C:/719/2017_06_10_Total/image/pic/1.png", labelloc = b , height=1.2];
+温度传感器->数据采集箱1[ color = green ] 
+湿度传感器->数据采集箱1[ color = green ] 
+数据采集箱1->显示台[ color = green ] 
+}

@@ -1,0 +1,7 @@
+graph qing{
+	rankdir = LR;
+ graph [  bgcolor=transparent ]
+   node [style=filled fillcolor="#00ff005f"] 
+	node [shape = "ellipse", style = "filled", color = "lightblue", fontname = "FangSong", fontsize = "12"];
+	6[label = "6\n显示台"];
+}

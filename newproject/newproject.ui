@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NewProject</class>
+ <widget class="QWidget" name="NewProject">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>344</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>290</y>
+     <width>281</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="okNewProject">
+      <property name="text">
+       <string>确定</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>88</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cancelNewProject">
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>50</y>
+     <width>131</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>评估单元</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0">
+     <widget class="QCheckBox" name="jiagou_select">
+      <property name="text">
+       <string>网络架构</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QCheckBox" name="xinxi_select">
+      <property name="text">
+       <string>信息流</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QCheckBox" name="wuli_select">
+      <property name="text">
+       <string>物理属性</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QCheckBox" name="gongzuo_select">
+      <property name="text">
+       <string>工作流</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QCheckBox" name="taishi_select">
+      <property name="text">
+       <string>态势仿真</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="main_next">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>290</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>下一步</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>42</x>
+     <y>132</y>
+     <width>281</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>评估型号及系统选择</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="2" column="0">
+     <widget class="QComboBox" name="comboBox_2">
+      <item>
+       <property name="text">
+        <string>声纳探测系统</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>姿态控制系统</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>浮力控制系统</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>气体循环系统</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>发电系统</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>推进系统</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>舱底系统</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>雷达系统</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>艇体系统</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>新建项目</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QComboBox" name="comboBox">
+      <item>
+       <property name="text">
+        <string>远征系列-“宋”级常规潜艇</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>长征系列-“汉”级攻击核潜艇</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>远征系列-“基洛”级常规潜艇</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>远征系列-“明”级常规潜艇</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>远征系列-“元”级常规潜艇</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>长征系列-“夏”级导弹核潜艇</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>80</y>
+     <width>268</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>模板路径：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="projectDir"/>
+    </item>
+    <item>
+     <widget class="QToolButton" name="chooseProjectDir">
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLineEdit" name="projectName">
+   <property name="geometry">
+    <rect>
+     <x>118</x>
+     <y>52</y>
+     <width>201</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>52</x>
+     <y>52</y>
+     <width>60</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>项目名称：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="info">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>20</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>？</string>
+   </property>
+  </widget>
+  <zorder>projectName</zorder>
+  <zorder>label</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>groupBox</zorder>
+  <zorder>main_next</zorder>
+  <zorder>groupBox_2</zorder>
+  <zorder>info</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

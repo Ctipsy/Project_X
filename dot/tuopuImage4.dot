@@ -1,0 +1,18 @@
+graph qing{
+	rankdir = LR;
+graph [bgcolor = transparent,autosize=false, size="8.0, 10"]
+	node [shape = "ellipse", style = "filled", color = "#2E8B57", fontname = "FangSong", fontsize = "12"];
+	4[label = "4\n温度传感器B"];
+	5[label = "5\n数据采集箱A"];
+	4--5;
+	5[label = "5\n数据采集箱A"];
+	6[label = "6\n服务器A"];
+	5--6;
+	6[label = "6\n服务器A"];
+	7[label = "7\n交换机A"];
+	6--7;
+	7[label = "7\n交换机A"];
+	8[label = "8\n显控台A"];
+	7--8;
+	8[label = "8\n显控台A"];
+}

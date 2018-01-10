@@ -1,0 +1,596 @@
+
+
+/************************************FindPassword::QPushButton*************************************************/
+QLabel#infoLabel3
+{
+    border-image: url(:/image/reg/rinfoLabel3.png);
+}
+QLabel#infoLabel
+{
+    border-image: url(:/image/reg/rinfoLabel.png);
+}
+QPushButton#closeFdButton:!hover
+{
+    border-image: url(:/image/findpassword/fcloseFdButton.png);
+}
+
+QPushButton#closeFdButton:hover
+{
+    border-image: url(:/image/findpassword/fcloseFdButton2.png);
+}
+
+QPushButton#minFdButton:!hover
+{
+    border-image: url(:/image/findpassword/fminFdButton.png);
+}
+
+QPushButton#minFdButton:hover
+{
+    border-image: url(:/image/findpassword/fminFdButton2.png);
+}
+
+
+QPushButton#okFdButton:!hover
+{
+    border-image: url(:/image/findpassword/fokButton.png);
+}
+
+QPushButton#okFdButton:hover
+{
+    border-image: url(:/image/findpassword/fokButton2.png);
+}
+
+QLabel#infoFdLabel
+{
+    border-image: url(:/image/findpassword/finfoLabel.png);
+}
+
+/************************************LoginPanel::QPushButton*************************************************/
+QPushButton#closeLogButton:!hover:!pressed
+{
+    border-image: url(:/image/login/lcloseLogButton.png);
+}
+
+QPushButton#closeLogButton:hover
+{
+    border-image: url(:/image/login/lcloseLogButton2.png);
+}
+
+
+QPushButton#minLogButton:!hover:!pressed
+{
+    border-image: url(:/image/login/lminLogButton.png);
+}
+
+QPushButton#minLogButton:hover
+{
+    border-image: url(:/image/login/lminLogButton2.png);
+}
+
+
+
+QPushButton#loginButton:!hover
+{
+    border-image: url(:/image/login/lloginButton.png);
+}
+
+QPushButton#loginButton:hover
+{
+    border-image: url(:/image/login/lloginButton2.png);
+}
+
+
+QPushButton#registerButton:!hover
+{
+    border-image: url(:/image/login/lregisterButton.png);
+}
+
+QPushButton#registerButton:hover
+{
+    border-image: url(:/image/login/lregisterButton2.png);
+}
+
+
+
+QPushButton#findPasswordButton:!hover
+{
+    border-image: url(:/image/login/lfindPasswordButton.png);
+}
+
+QPushButton#findPasswordButton:hover
+{
+    border-image: url(:/image/login/lfindPasswordButton2.png);
+}
+
+
+
+
+
+
+
+
+
+/************************************LoginPanel::QComboBox***************************************************/
+QLineEdit#userID:hover
+{
+    border-image: url(:/image/login/luserID.png);
+    padding:0px 0px 0px 1px;
+}
+
+
+/************************************FindPassword::QComboBox*************************************************/
+
+QComboBox#safeFdQuestion:!hover
+{
+    border-image: url(:/image/findpassword/flineFdEdit.png);
+    font:15px;
+    padding:0px 0px 0px 2px;
+}
+
+QComboBox#safeFdQuestion:hover
+{
+    border-image: url(:/image/findpassword/flineFdEdit2.png);
+    font:15px;
+    padding:0px 0px 0px 2px;
+}
+
+QComboBox#safeFdQuestion::drop-down:!hover
+{
+    border-image: url(:/image/findpassword/fxialaButton.png);
+    width:35px;
+    height:37px;
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+}
+
+QComboBox#safeFdQuestion::drop-down:hover
+{
+    border-image: url(:/image/findpassword/fxialaButton2.png);
+    width:35px;
+    height:37px;
+}
+
+
+
+/************************************LoginPanel::QLineEdit***************************************************/
+QLineEdit#password:hover
+{
+    border-image: url(:/image/login/lpassword.png);
+	font:25px;
+    padding:0px 0px 0px 1px;
+}
+
+
+
+
+
+/************************************LoginPanel::QLabel*************************************************/
+QLabel#errorLgLabel
+{
+    border-image: url(:/image/login/lerror.png);
+}
+
+QLabel#errorLgLabel2
+{
+    border-image: url(:/image/login/lerror2.png);
+}
+
+
+
+
+
+
+
+
+/************************************RegPanel::QPushButton*************************************************/
+
+QPushButton#closeRegButton:!hover
+{
+    border-image: url(:/image/reg/rcloseRegButton.png);
+}
+
+QPushButton#closeRegButton:hover
+{
+    border-image: url(:/image/reg/rcloseRegButton2.png);
+}
+
+
+
+QPushButton#minRegButton:!hover
+{
+    border-image: url(:/image/reg/rminRegButton.png);
+}
+
+QPushButton#minRegButton:hover
+{
+    border-image: url(:/image/reg/rminRegButton2.png);
+}
+
+
+QPushButton#startRegButton:!hover
+{
+    border-image: url(:/image/reg/rregButton.png);
+}
+
+QPushButton#startRegButton:hover
+{
+    border-image: url(:/image/reg/rregButton2.png);
+}
+
+
+
+QPushButton#okRegButton:!hover
+{
+    border-image: url(:/image/reg/rokButton.png);
+}
+
+QPushButton#okRegButton:hover
+{
+    border-image: url(:/image/reg/rokButton2.png);
+}
+
+
+
+/************************************RegPanel::QPushButton*************************************************/
+
+
+
+
+/************************************RegPanel::QLineEdit*************************************************/
+QLineEdit#userNUM:!hover
+{
+    border-image: url(:/image/reg/rlineRegEdit.png);
+    font:15px;
+    padding:0px 0px 0px 1px;
+}
+
+QLineEdit#userNUM:hover
+{
+    border-image: url(:/image/reg/rlineRegEdit2.png);
+    font:15px;
+    padding:0px 0px 0px 1px;
+}
+
+QLineEdit#userRegName:!hover
+{
+    border-image: url(:/image/reg/rlineRegEdit.png);
+    font:15px;
+    padding:0px 0px 0px 1px;
+}
+
+QLineEdit#userRegName:hover
+{
+    border-image: url(:/image/reg/rlineRegEdit2.png);
+    font:15px;
+    padding:0px 0px 0px 1px;
+}
+
+
+QLineEdit#passwordReg:!hover
+{
+    border-image: url(:/image/reg/rlineRegEdit.png);
+    padding:0px 0px 0px 1px;
+}
+
+QLineEdit#passwordReg:hover
+{
+    border-image: url(:/image/reg/rlineRegEdit2.png);
+    padding:0px 0px 0px 1px;
+}
+
+QLineEdit#passwordRegOk:!hover
+{
+    border-image: url(:/image/reg/rlineRegEdit.png);
+    padding:0px 0px 0px 1px;
+}
+
+QLineEdit#passwordRegOk:hover
+{
+    border-image: url(:/image/reg/rlineRegEdit2.png);
+    padding:0px 0px 0px 1px;
+}
+
+QLineEdit#safeRegAnswer:!hover
+{
+    border-image: url(:/image/reg/rlineRegEdit.png);
+    font:15px;
+    padding:0px 0px 0px 1px;
+}
+
+QLineEdit#safeRegAnswer:hover
+{
+    border-image: url(:/image/reg/rlineRegEdit2.png);
+    font:15px;
+    padding:0px 0px 0px 1px;
+}
+
+/************************************RegPanel::QLineEdit*************************************************/
+
+
+
+
+/************************************RegPanel::QDateTimeEdit*************************************************/
+
+QDateTimeEdit#birthday:!hover
+{
+    border-image: url(:/image/reg/rlineRegEdit.png);
+    font:15px;
+    padding:0px 0px 0px 1px;
+}
+
+QDateTimeEdit#birthday:hover
+{
+    border-image: url(:/image/reg/rlineRegEdit2.png);
+    font:15px;
+    padding:0px 0px 0px 1px;
+}
+
+QDateTimeEdit#birthday::drop-down:!hover
+{
+    border-image: url(:/image/reg/rxialaButton.png);
+    width:35px;
+    height:37px;
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+}
+
+
+QDateTimeEdit#birthday::drop-down:hover
+{
+    border-image: url(:/image/reg/rxialaButton2.png);
+    width:35px;
+    height:37px;
+}
+
+/*
+QDateTimeEdit#birthday::drop-down:pressed
+{
+    border-image: url(:/image/login/xialaButton3.png);
+}
+*/
+/************************************RegPanel::QDateTimeEdit*************************************************/
+
+
+
+/************************************RegPanel::QRadioButton*************************************************/
+
+QRadioButton
+{
+    font:15px;
+}
+
+/************************************RegPanel::QRadioButton*************************************************/
+
+
+
+
+/************************************RegPanel::QComboBox*************************************************/
+
+QComboBox#province:!hover
+{
+    border-image: url(:/image/reg/rcomBox.png);
+}
+
+QComboBox#province:hover
+{
+    border-image: url(:/image/reg/rcomBox2.png);
+}
+
+QComboBox#province::drop-down:!hover
+{
+    border-image: url(:/image/reg/rcomBox.png);
+    width:63px;
+    height:37px;
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+}
+
+QComboBox#province::drop-down:hover
+{
+    border-image: url(:/image/login/reg/rcomBox.png);
+    width:63px;
+    height:37px;
+}
+
+QComboBox#city:!hover
+{
+    border-image: url(:/image/reg/rcomBox.png);
+}
+
+QComboBox#city:hover
+{
+    border-image: url(:/image/reg/rcomBox2.png);
+}
+
+QComboBox#city::drop-down:!hover
+{
+    border-image: url(:/image/reg/rcomBox.png);
+    width:63px;
+    height:37px;
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+}
+
+QComboBox#city::drop-down:hover
+{
+    border-image: url(:/image/login/reg/rcomBox.png);
+    width:63px;
+    height:37px;
+}
+
+QComboBox#area:!hover
+{
+    border-image: url(:/image/reg/rcomBox.png);
+}
+
+QComboBox#area:hover
+{
+    border-image: url(:/image/reg/rcomBox2.png);
+}
+
+QComboBox#area::drop-down:!hover
+{
+    border-image: url(:/image/reg/rcomBox.png);
+    width:63px;
+    height:37px;
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+}
+
+QComboBox#area::drop-down:hover
+{
+    border-image: url(:/image/login/reg/rcomBox.png);
+    width:63px;
+    height:37px;
+}
+
+QComboBox#safeRegQuestion:!hover
+{
+    border-image: url(:/image/reg/rlineRegEdit.png);
+    font:15px;
+    padding:0px 0px 0px 2px;
+}
+
+QComboBox#safeRegQuestion:hover
+{
+    border-image: url(:/image/reg/rlineRegEdit2.png);
+    font:15px;
+    padding:0px 0px 0px 2px;
+}
+
+QComboBox#safeRegQuestion::drop-down:!hover
+{
+    border-image: url(:/image/reg/rxialaButton.png);
+    width:35px;
+    height:37px;
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+}
+
+QComboBox#safeRegQuestion::drop-down:hover
+{
+    border-image: url(:/image/reg/rxialaButton2.png);
+    width:35px;
+    height:37px;
+}
+
+/************************************RegPanel::QComboBox*************************************************/
+
+
+
+
+/************************************RegPanel::QLabel*************************************************/
+
+QLabel#errorLabel
+{
+    border-image: url(:/image/reg/rerror.png);
+}
+
+QLabel#errorLabel2
+{
+    border-image: url(:/image/reg/rerror2.png);
+}
+
+QLabel#errorLabel3
+{
+    border-image: url(:/image/reg/rerror3.png);
+}
+
+QLabel#errorLabel4
+{
+    border-image: url(:/image/reg/rerror.png);
+}
+
+
+QLabel#regSuccessLabel
+{
+    border-image: url(:/image/reg/rregSuccessLabel.png);
+}
+
+
+QLabel#infoLabel2
+{
+    border-image: url(:/image/reg/rinfoLabel2.png);
+}
+
+/*
+QLabel#userID
+{
+    color:black;
+    font:35px;
+    font-family:ԗԲ;
+    font-weight:bold;
+}
+*/
+
+
+
+
+/************************************FindPassword::QLabel*************************************************/
+
+
+/*
+QLabel#passwordLabel
+{
+    color:black;
+    font:35px;
+    font-family:ԗԲ;
+    font-weight:bold;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************FindPassword::QLineEdit*************************************************/
+
+QLineEdit#safeFdAnswer:!hover
+{
+    border-image: url(:/image/findpassword/flineFdEdit.png);
+    font:15px;
+    padding:0px 0px 0px 1px;
+}
+
+QLineEdit#safeFdAnswer:hover
+{
+    border-image: url(:/image/findpassword/flineFdEdit2.png);
+    font:15px;
+    padding:0px 0px 0px 1px;
+}
+
+QLineEdit#userFdID:!hover
+{
+    border-image: url(:/image/findpassword/flineFdEdit.png);
+    font:15px;
+    padding:0px 0px 0px 1px;
+}
+
+QLineEdit#userFdID:hover
+{
+    border-image: url(:/image/findpassword/flineFdEdit2.png);
+    font:15px;
+    padding:0px 0px 0px 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

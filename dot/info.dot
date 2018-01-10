@@ -1,0 +1,25 @@
+digraph qing{
+	rankdir = LR;
+graph [bgcolor = transparent,autosize=false, size="8.0, 10"]
+	node [shape = "ellipse", style = "filled", color = "#2E8B57", fontname = "FangSong", fontsize = "12"];
+	湿度传感器A->数据采集箱A[label = "I1 (3,30) /150", color = brown, penwidth = 1, fontname = "FangSong"];
+	湿度传感器B->数据采集箱A[label = "I2 (2,40) /150", color = brown, penwidth = 1, fontname = "FangSong"];
+	温度传感器A->数据采集箱A[label = "I3 (4,15) /150", color = brown, penwidth = 1, fontname = "FangSong"];
+	温度传感器B->数据采集箱A[label = "I4 (3,20) /150", color = brown, penwidth = 1, fontname = "FangSong"];
+	数据采集箱A->服务器A[label = "I5 (3,60) /200", color = skyblue, penwidth = 1, fontname = "FangSong"];
+	服务器A->交换机A[label = "I6 (3,30) /400", color = skyblue, penwidth = 1, fontname = "FangSong"];
+	交换机A->显控台A[label = "I7 (3,30) /200", color = skyblue, penwidth = 1, fontname = "FangSong"];
+	显控台B->服务器B[label = "I8 (3,30) /200", color = blue, penwidth = 1, fontname = "FangSong"];
+	服务器B->控制器B[label = "I9 (3,30) /400", color = skyblue, penwidth = 1, fontname = "FangSong"];
+	控制器B->数据采集箱B[label = "I10 (3,30) /200", color = skyblue, penwidth = 1, fontname = "FangSong"];
+	声呐B->数据采集箱B[label = "I11 (3,30) /200", color = lightblue, penwidth = 1, fontname = "FangSong"];
+	声呐B->数据采集箱B[label = "I12 (3,30) /200", color = lightblue, penwidth = 1, fontname = "FangSong"];
+	多普勒传感器A->数据采集箱B[label = "I13 (3,30) /200", color = lightblue, penwidth = 1, fontname = "FangSong"];
+	陀螺仪A->数据采集箱B[label = "I14 (3,30) /200", color = lightblue, penwidth = 1, fontname = "FangSong"];
+	数据采集箱B->姿态控制器B[label = "I15 (3,30) /200", color = lightblue, penwidth = 1, fontname = "FangSong"];
+	服务器B->控制器A[label = "I16 (3,30) /200", color = skyblue, penwidth = 1, fontname = "FangSong"];
+	控制器B->数据采集箱A[label = "I17 (3,30) /200", color = skyblue, penwidth = 1, fontname = "FangSong"];
+	控制器A->数据采集箱A[label = "I18 (3,30) /200", color = skyblue, penwidth = 1, fontname = "FangSong"];
+	控制器A->数据采集箱B[label = "I19 (3,30) /200", color = skyblue, penwidth = 1, fontname = "FangSong"];
+	数据采集箱B->服务器A[label = "I20 (3,30) /200", color = lightblue, penwidth = 1, fontname = "FangSong"];
+}
