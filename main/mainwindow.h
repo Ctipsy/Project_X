@@ -88,7 +88,7 @@ bool CompaireByValue(pair<double,uint> &a1,pair<double,uint> &a2);
 QMap<QString, QMap<QString, QString> > getTotalMessRes();//返回每个交互信息中三大一级指标的名称和分数
 QMap<QString,QMap<QString,QString> > getLowScoreIndexMess();//返回每个交互信息中低于60分的原子指标及分数
 QSet<QString> getIndexSuggestion();//低于60分的原子指标安全性建议，返回的是所有交互信息中低于60分的原子指标名称
-QSqlDatabase ProjectDatabaseConnect();//工程目录下的数据库文件
+void ProjectDatabaseConnect();//工程目录下的数据库文件
 void resetIndex();//当新建工程时，初始化工程文件中的数据库
 namespace Ui {
 class MainWindow;

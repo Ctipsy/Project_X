@@ -7,9 +7,9 @@
 #include <QtSql>
 #include "sys_discript/system_informa.h"
 #include "sys_discript/base_informa.h"
-bool g_session = false;  //全局变量 账户类型判断,其实可以不同初始化，因为编译器自动将初始值设为false(已测试)
-int  active_module=0;   //全局变量 激活模块判断,其实可以不同初始化，因为编译器自动将初始值设为0
-int  active_days=0;     //全局变量 激活时间判断
+bool g_session = false;         //全局变量 账户类型判断,其实可以不同初始化，因为编译器自动将初始值设为false(已测试)
+int  active_module=0;           //全局变量 激活模块判断,其实可以不同初始化，因为编译器自动将初始值设为0
+int  active_days=0;             //全局变量 激活时间判断
 int  jihuo = 0;
 QString  creatUser;     //全局变量 创建项目人
 QString  creatTime;     //全局变量 创建项目时间
@@ -24,8 +24,8 @@ void resetIndexStandardDB();
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    m_dbConnect = DatabaseConnect();//基准数据库
-    resetIndexStandardDB();//基准数据库的初始化
+    m_dbConnect = DatabaseConnect();    //基准数据库
+    resetIndexStandardDB();             //基准数据库的初始化
     indexNameNotFound=CheckQuestionnaire();
     MainWindow w;
     app.setQuitOnLastWindowClosed(false);
@@ -83,9 +83,18 @@ int main(int argc, char *argv[])
 QSqlDatabase DatabaseConnect()
 {
     QSqlDatabase dbConnect;
+    QString mdb_path;
+    mdb_path = "D:/Program Files (x86)/X_Ship/DB_51aspx/ProjectFiles/"+creatName+"/Lj_QuestionnaireSys.mdb";
     dbConnect = QSqlDatabase::addDatabase("QODBC");//采用的接口和连接名
-    dbConnect.setDatabaseName("DRIVER={Microsoft Access Driver (*.mdb)};\
-    FIL={MS Access};DBQ=D:/Program Files (x86)/X_Ship/DB_51aspx/Lj_QuestionnaireSys.mdb");
+
+        dbConnect.setDatabaseName("DRIVER={Microsoft Access Driver (*.mdb)};\
+        FIL={MS Access};DBQ=D:/Program Files (x86)/X_Ship/DB_51aspx/Lj_QuestionnaireSys.mdb");
+
+//    else
+//    {
+//        dbConnect.setDatabaseName("DRIVER={Microsoft Access Driver (*.mdb)};\
+//        FIL={MS Access};DBQ=D:/Program Files (x86)/X_Ship/DB_51aspx/ProjectFiles/"+"creatName+/Lj_QuestionnaireSys.mdb");
+//    }
     QString strUserPassword="123";
     QString strUserName="123";
     dbConnect.setUserName(strUserName);//设置登陆数据库的用户名

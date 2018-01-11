@@ -844,7 +844,7 @@ void messageassess::on_total_informa_clicked()
 //    m_renderer->render(&painter);
 }
 
-void messageassess::on_edit_question_clicked()
+void messageassess::on_edit_question_clicked()  //问卷作答点击按钮触发函数
 {
     QString strWorkingDir="D:\\Program Files (x86)\\X_Ship";
     QDir::setCurrent(strWorkingDir);
@@ -859,11 +859,13 @@ void messageassess::on_edit_question_clicked()
     QuestionnaireAnalysis();
 
     m_message_index->DatabaseRead();
-    m_message_index->Get_TheSecurity();
+    m_message_index->Get_TheSecurity();   //赋值函数 1.10PM
     if(m_message_index->m_ID_calculateResult.find(ui->select_message->currentText())==m_message_index->m_ID_calculateResult.end())
         m_message_index->m_ID_calculateResult.insert(ui->select_message->currentText(),m_message_index->m_calculateResult);
     else m_message_index->m_ID_calculateResult[ui->select_message->currentText()]=m_message_index->m_calculateResult;
+
     on_message_selection_currentIndexChanged(ui->message_selection->currentText());
+
     View_TotalMess();
 }
 

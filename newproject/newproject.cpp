@@ -117,23 +117,60 @@ QString NewProject::create_proDir()
     dir.mkdir(new_project_name_);//创建以项目名为名字的目录
     QString _project_dir_=dir.absoluteFilePath(new_project_name_);//获取项目文件夹的绝对路径
 
+
+    QDir tempDir;
+    QString filePath = "D:/Program Files (x86)/X_Ship/DB_51aspx/ProjectFiles/"+new_project_name_+"/DB_51aspx"          ;
+    QString currentDir = tempDir.currentPath();
+    //如果filePath路径不存在，创建它
+    if(!tempDir.exists(filePath))
+    {
+        tempDir.mkpath(filePath);
+    }
+
+
     QDir project_dir(_project_dir_);
     //以下方法可以将文件复制到所选则的文件根目录下
-
     QFile file(new_project_dir_);
     QFile file2("D:/Program Files (x86)/X_Ship/DB_51aspx/Lj_QuestionnaireSys.mdb");//要复制的数据库文件路径
+    QFile file3("D:/Program Files (x86)/X_Ship/QuestionnaireSystemUser.exe");
+    QFile file4("D:/Program Files (x86)/X_Ship/WeifenLuo.WinFormsUI.Docking.dll");
+
     QString xml_data = new_project_name_+".xml"; //根据新建项目名，重新拷贝命名一份xml文件
     QString mdb_data = "Lj_QuestionnaireSys.mdb"; //
+    QString exe_name = "QuestionnaireSystemUser.exe";
+    QString dll_name = "WeifenLuo.WinFormsUI.Docking.dll";
+
+
+
     QFileInfo info(xml_data);//要生成的文件名
     QFileInfo info2(mdb_data);//
+    QFileInfo info3(exe_name);
+    QFileInfo info4(dll_name);
+
+
     QString dstPath = _project_dir_+QString("/");//  加/表示子目录
-    QString dstPath2 = _project_dir_+QString("/");//
+    QString dstPath2 = filePath+"/";//
+    QString dstPath3 = "D:/Program Files (x86)/X_Ship/DB_51aspx/ProjectFiles/"+new_project_name_+"/" ;
+    QString dstPath4 = "D:/Program Files (x86)/X_Ship/DB_51aspx/ProjectFiles/"+new_project_name_+"/" ;
+
+
     dstPath += info.fileName();//不加这句，没法生成xml文件
     dstPath2 += info2.fileName();//不加这句，没法生成mdb文件
+    dstPath3 += info3.fileName();//不加这句，没法生成mdb文件
+    dstPath4 += info4.fileName();//不加这句，没法生成mdb文件
+
+
+
     file.copy(dstPath);
     file2.copy(dstPath2);
+    file3.copy(dstPath3);
+    file4.copy(dstPath4);
+
+
     file.close();
     file2.close();
+    file3.close();
+    file4.close();
 
 
     //新建项目文件pro

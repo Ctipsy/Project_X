@@ -22,6 +22,8 @@ const QString wuliSuggestionPath = "D:/Program Files (x86)/X_Ship/DB_51aspx/wuli
 extern int active_module;//一共评估几个构件
 extern int active_days;
 extern int jihuo;
+extern QSqlDatabase m_dbConnect;////数据库修改  基准数据库
+
 extern QList<uint> messagegroup;//信息流评估中的信道容量
 extern QList<uint> devicegroup;
 extern QString creatName;
@@ -367,11 +369,13 @@ void MainWindow::change_window()
 //打开项目槽函数
 void MainWindow::on_openProject_triggered()
 {
+
     History *history= new History;
     //history->show(); //非模态，也可以用->open();
     history->setSizeGripEnabled(true);  //窗口大小可调整
     if(history->exec() == QDialog::Accepted)   //模态，阻塞窗口，直到QDialog窗口对象做出反馈
     {
+        ProjectDatabaseConnect();//数据库修改
         QString save_path=history->xml_path+creatName+".xml";
         //active_module = history->modules;
         //qDebug()<<"测试历史"<<save_path<<history->modules;
@@ -407,9 +411,11 @@ void MainWindow::on_openProject_triggered()
 
 void MainWindow::on_newProject_triggered()
 {
-   NewProject project;
+    NewProject project;
    if(project.exec()==QDialog::Accepted)
     {
+       ProjectDatabaseConnect(); //数据库修改
+
        QString save_path="D:/Program Files (x86)/X_Ship/DB_51aspx/ProjectFiles/"+creatName+"/"+creatName+".xml";
         if(!save_path.isEmpty())
         {
@@ -439,20 +445,21 @@ void MainWindow::on_newProject_triggered()
 
 
 //工程文件目录下的数据库,此函数应当放在新建工程那里
-QSqlDatabase ProjectDatabaseConnect()
+void ProjectDatabaseConnect()    //数据库修改
 {
     QSqlDatabase dbConnect;
     dbConnect = QSqlDatabase::addDatabase("QODBC");//采用的接口和连接名
     dbConnect.setDatabaseName("DRIVER={Microsoft Access Driver (*.mdb)};\
-    FIL={MS Access};DBQ=D:/Program Files (x86)/X_Ship/DB_51aspx/ProjectFiles/"+creatName+"/"+"Lj_QuestionnaireSys.mdb");
+    FIL={MS Access};DBQ=D:/Program Files (x86)/X_Ship/DB_51aspx/ProjectFiles/"+creatName+"/DB_51aspx/"+"Lj_QuestionnaireSys.mdb");
     QString strUserPassword="123";
     QString strUserName="123";
     dbConnect.setUserName(strUserName);//设置登陆数据库的用户名
     dbConnect.setPassword(strUserPassword);//设置密码
     bool bOpen=dbConnect.open(strUserName,strUserPassword);
     if(!bOpen)
-        QMessageBox::information(NULL, QString("数据库"), QString("Lj_QuestionnaireSys.mdb数据库打开失败"));
-    return dbConnect;
+        QMessageBox::information(NULL, QString("数据库"), QString("工程路径下数据库打开失败"));
+    else
+        m_dbConnect = dbConnect;   //数据库修改
 }
 
 //数据库原子指标初始化，仅在新建工程的时候初始化
