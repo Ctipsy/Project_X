@@ -127,7 +127,7 @@ QString NewProject::create_proDir()
         tempDir.mkpath(filePath);
     }
 
-
+    //测试diff
     QDir project_dir(_project_dir_);
     //以下方法可以将文件复制到所选则的文件根目录下
     QFile file(new_project_dir_);
